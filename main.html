@@ -7,6 +7,60 @@
     <title>EFA English For All</title>
 </head>
 <body>
-    
+    <div class="cabecalho">
+        <div class="cabecalho">
+            <div class="info">
+                <img src="./IMG/telefoneico.png"><a href="tel:551198399-8381">(11) 98399-8381</a>
+                <a href="">|</a>
+                <a href="">|</a>
+                <a href="">|</a>
+                <img src="./IMG/email.png"><a href="">efaenglishforallidiomas@gmail.com</a>
+            </div>
+            <div class="redes">
+                <a href=""><img src="./IMG/facebook.png"></a>
+                <a href=""><img src="./IMG/twitter.png"></a>
+                <a href=""><img src="./IMG/linkedin.png"></a>
+                <a href=""><img id="whats" src="./IMG/whatsapp.png" onclick="whatsapp()"></a>
+            </div>
+        </div>
+    </div>
+    <div class="logo_menu_button">
+        <div class="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li class="cursos"><a href="">Cursos</a>
+                    <ul>
+                        <li><a href="">Alfabetização</a></li>
+                        <li><a href="">Inglês</a></li>
+                        <li><a href="">Espanhol</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Galeria</a></li>
+                <li><a href="">Sobre nós</a></li>
+            </ul>
+        </div>
+        <div class="button">
+            <form class="pesquisa">
+               <input type="search" id="texto" list="historico" placeholder="Pesquisar" required>
+                <img src="./IMG/icone-search.png" class="btn" onclick="executar()">
+                <datalist id="historico">
+                    <option value="Cursos"></option>
+                    <option value="Localização"></option>
+                    <option value="Inglês"></option>
+                    <option value="Alfabetização"></option>
+                    <option value="Espanhol"></option>
+                </datalist>
+            </form>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="img-box">
+            <img src="./IMG/slide1.png" class="slider-img" >
+        </div>
+
+        <button class="botao" id="prev" onclick="prev()"><img src="./IMG/anterior.png"></button>
+        <button class="botao" id="next" onclick="next()"><img src="./IMG/proximo.png"></button>
+    </div>
+    <script type="text/javascript" src="./JS/main.js"></script>
 </body>
 </html>
